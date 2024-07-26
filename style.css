@@ -1,0 +1,253 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --second-background-color: #20232a;
+    --primary-color: #303846;
+    --background-color: #f7f7f7;
+    --primary-background-color: white;
+    --text-color: white;
+    --second-text-color: #1c1e21;
+    --a-text-color: #09d3ac;
+}
+
+.bef-nav {
+    background-color: var(--second-background-color);
+    height: 56px;
+    color: var(--text-color);
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "system-ui";
+}
+
+.bef-nav a {
+    color: var(--a-text-color);
+}
+
+.navbar {
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 750px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.ops {
+    height: 60px;
+    width: 500px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.ops a:hover {
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    color: var(--a-text-color);
+}
+
+.img-logo {
+    height: 35px;
+}
+
+.logo-name {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 700;
+    size: 30px;
+    line-height: 30px;
+}
+
+.logo-name:hover {
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    color: var(--a-text-color);
+}
+
+.search {
+    height: 25px;
+    width: 173px;
+    border-radius: 20px;
+    padding: 0 5px;
+    border: 2px solid transparent;
+    background-color: var(--background-color);
+}
+
+.search:hover {
+    transition: all 0.2s ease-in-out;
+    border: 2px solid #09d3ac;
+}
+
+.hero-sec {
+    height: 478px;
+    width: 100%;
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+.hero-logo {
+    color: var(--text-color);
+    width: 170px;
+    margin: 50px 0;
+}
+
+.hero-title {
+    color: var(--text-color);
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+.hero-subtitle {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    margin: 30px 0;
+}
+
+.button {
+    height: 50px;
+    width: 178px;
+    background-color: transparent;
+    border: 1px solid var(--a-text-color);
+    text-align: center;
+    border-radius: 0.4rem;
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--a-text-color);
+    margin-bottom: 50px;
+}
+
+.button:hover {
+    transition: all 0.2s ease-in-out;
+    color: var(--text-color);
+    background-color: var(--a-text-color);
+    cursor: pointer;
+}
+
+.after-hero-sec-1 {
+    height: 346px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.8rem;
+    text-align: left;
+    border: 5px solid red;
+}
+
+.reserch-1 {
+    width: 210px;
+    width: 33.33333%;
+}
+
+.reserch-1 h2 {
+    font-size: 1.5rem;
+}
+
+.reserch-1 p {
+    margin-top: 5px;
+}
+
+@media (max-width: 320px) {
+    .bef-nav {
+        height: 60px;
+        width: 560px;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 35px;
+    }
+
+    .navbar {
+        height: 50px;
+        width: 560px;
+    }
+
+    .logo {
+        width: 450px;
+        height: 50px;
+    }
+
+    .ops {
+        height: 50px;
+        width: 1070px;
+        margin-left: 5px;
+    }
+
+    .img-logo {
+        height: 35px;
+    }
+
+    .logo-name {
+        font-weight: 500;
+        size: 30px;
+        line-height: 15px;
+    }
+
+    .search {
+        height: 35px;
+        width: 100px;
+        border-radius: 20px;
+        padding: 0 5px;
+    }
+
+    .hero-sec {
+        height: 470px;
+        width: 560px;
+    }
+
+    .hero-logo {
+        width: 150px;
+        margin: 75px 0;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+        margin-bottom: 24px;
+    }
+
+    .hero-subtitle {
+        font-size: 1.3rem;
+        margin: 30px 0;
+    }
+
+    .button {
+        height: 40px;
+        width: 140px;
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+
+    .after-hero-sec-1 {
+        height: 500px;
+        width: 550px;
+        line-height: 1.6rem;
+        display: block;
+        text-align: left;
+    }
+
+    .reserch-1 {
+        width: 538px;
+        margin: 45px 0 0 5px;
+    }
+
+    .reserch-1 h2 {
+        font-size: 1.5rem;
+    }
+
+    .reserch-1 p {
+        margin-top: 15px;
+    }
+}
